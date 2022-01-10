@@ -1,0 +1,29 @@
+OAuth Entities:
+- Resource Owner
+- Client Application
+- Authorization Server
+- Resource Server
+- Client_id
+- Response_type
+- Scope
+- Redirect_uri
+- State
+- Grant_type
+- Code
+- Access_token
+- Refresh_token
+
+OAuth Vulnerabilities:
+- Stealing OAuth Token via Referer
+- Stealing OAuth Token via redirect_uri
+- Flawed CSRF protection (Cross-Site Request Forgery)
+- Ability to execute XSS (cross-site scripting) using the redirect_uri parameter
+- The OAuth Private Key disclosure (the key can sometimes be revealed when decompiling a mobile application) 
+- The Authorization Code Rule Violation (when an authorization code can be used more than once, to issue several access tokens)
+- Improper implementation of the implicit grant type
+- Leaking authorization codes and access tokens
+- Flawed scope validation
+- Unverified user registration
+- Host header injection
+- Reusable OAuth access token
+- Open Redirection at redirect_uri parameter
